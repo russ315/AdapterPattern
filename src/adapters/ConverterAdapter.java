@@ -1,5 +1,4 @@
-package adapters;
-import converters.IMetricConverter;
+package adapters;import converters.IMetricConverter;
 import converters.ImperialConverter;
 
 public class ConverterAdapter implements IMetricConverter {
@@ -12,5 +11,10 @@ public class ConverterAdapter implements IMetricConverter {
     @Override
     public double convertCToF(double celsius) {
         return imperialConverter.getTempInF(celsius);
+    }
+
+    @Override
+    public double convertFToC(double fahrenheit) {
+        return imperialConverter.getTempInC(fahrenheit);
     }
 }
