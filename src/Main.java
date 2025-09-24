@@ -9,8 +9,8 @@ public class Main {
         ImperialConverter imperialConverter = new ImperialConverter();
         IMetricConverter converter = new ConverterAdapter(imperialConverter);
 
-        double celsius = 25;
-        double fahrenheit = 77;
+        double celsius = 25; // could be any input value
+        double fahrenheit = 77; // could be any input value
 
         System.out.printf("%.2f °C = %.2f °F%n", celsius, converter.convertCToF(celsius));
         System.out.printf("%.2f °F = %.2f °C%n", fahrenheit, converter.convertFToC(fahrenheit));
